@@ -1,2 +1,2 @@
 # iOSapp
-Repositorio para la materia Desarrollo de Aplicaciones en la Plataforma iOS
+Repositorio para las actividades de la materia Desarrollo de Aplicaciones en la Plataforma iOS
