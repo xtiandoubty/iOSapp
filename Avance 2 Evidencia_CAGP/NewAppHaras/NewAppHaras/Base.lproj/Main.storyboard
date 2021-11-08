@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewAppHaras" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backround" translatesAutoresizingMaskIntoConstraints="NO" id="8XL-jS-sc5">
+                                <rect key="frame" x="-638" y="0.0" width="1690" height="902"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoName" translatesAutoresizingMaskIntoConstraints="NO" id="3OH-Cp-aA8">
+                                <rect key="frame" x="38" y="194" width="339" height="211"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona abajo para avanzar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-9k-xZC">
+                                <rect key="frame" x="44.5" y="470" width="325.5" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhL-bp-GqN">
+                                <rect key="frame" x="77" y="549" width="260" height="61"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
+                                <state key="normal" title="Ingresar">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="unicoBoton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9V-qh-j6p"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" id="wCT-I1-l71">
+                                <rect key="frame" x="58" y="689" width="299" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="3OH-Cp-aA8" secondAttribute="bottom" constant="457" id="1ey-I9-bxW"/>
+                            <constraint firstItem="3OH-Cp-aA8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="FU7-93-K18"/>
+                            <constraint firstItem="BhL-bp-GqN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="NCJ-oH-eEv"/>
+                            <constraint firstItem="BhL-bp-GqN" firstAttribute="top" secondItem="1FI-9k-xZC" secondAttribute="bottom" constant="50" id="QWW-62-dWD"/>
+                            <constraint firstItem="wCT-I1-l71" firstAttribute="top" secondItem="BhL-bp-GqN" secondAttribute="bottom" constant="79" id="UZW-OG-uAO"/>
+                            <constraint firstItem="1FI-9k-xZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQt-2u-veN"/>
+                            <constraint firstItem="3OH-Cp-aA8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="150" id="bS6-Uo-mqr"/>
+                            <constraint firstItem="1FI-9k-xZC" firstAttribute="top" secondItem="3OH-Cp-aA8" secondAttribute="bottom" constant="65" id="eXM-DR-h7j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3OH-Cp-aA8" secondAttribute="trailing" constant="17" id="x4d-x4-V3X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BhL-bp-GqN" secondAttribute="trailing" constant="57" id="zVj-pN-ukq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="9Fs-76-tQo">
+            <objects>
+                <viewController storyboardIdentifier="second_vc" id="x65-F8-fbC" customClass="SecondViewController" customModule="NewAppHaras" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsd-cb-y0d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundPantalla2" translatesAutoresizingMaskIntoConstraints="NO" id="Kit-xd-FdO">
+                                <rect key="frame" x="-637" y="-4" width="1688" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-tI-PLS">
+                                <rect key="frame" x="80" y="600" width="254" height="192"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="30"/>
+                                <state key="normal" title="Generar actividad">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonSecondVC:" destination="x65-F8-fbC" eventType="touchUpInside" id="uQu-sa-sMR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="act1" id="GZP-cc-4iq">
+                                <rect key="frame" x="52" y="292" width="310" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-5g-ebG">
+                                <rect key="frame" x="87" y="44" width="240" height="107"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I4r-Jk-u19" firstAttribute="bottom" secondItem="Unm-5g-ebG" secondAttribute="bottom" constant="711" id="DIw-nf-x3c"/>
+                            <constraint firstItem="I4r-Jk-u19" firstAttribute="trailing" secondItem="wJb-tI-PLS" secondAttribute="trailing" constant="80" id="EAz-q9-2Y0"/>
+                            <constraint firstItem="Unm-5g-ebG" firstAttribute="leading" secondItem="I4r-Jk-u19" secondAttribute="leading" constant="87" id="TKw-4X-LrT"/>
+                            <constraint firstItem="wJb-tI-PLS" firstAttribute="leading" secondItem="I4r-Jk-u19" secondAttribute="leading" constant="80" id="UgZ-mh-su0"/>
+                            <constraint firstItem="I4r-Jk-u19" firstAttribute="trailing" secondItem="Unm-5g-ebG" secondAttribute="trailing" constant="87" id="Zy4-RW-VnO"/>
+                            <constraint firstItem="I4r-Jk-u19" firstAttribute="bottom" secondItem="wJb-tI-PLS" secondAttribute="bottom" constant="70" id="fSP-JB-NPw"/>
+                            <constraint firstItem="Unm-5g-ebG" firstAttribute="top" secondItem="I4r-Jk-u19" secondAttribute="top" id="joy-20-pfu"/>
+                            <constraint firstItem="wJb-tI-PLS" firstAttribute="top" secondItem="GZP-cc-4iq" secondAttribute="bottom" id="kEp-P2-Sgb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I4r-Jk-u19"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageChange" destination="GZP-cc-4iq" id="Ft3-4x-cUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awz-tc-IhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="-576.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="1920" height="1080"/>
+        <image name="LogoName" width="1920" height="1080"/>
+        <image name="act1" width="1000" height="1000"/>
+        <image name="backgroundPantalla2" width="1440" height="3040"/>
+        <image name="backround" width="185" height="400"/>
+    </resources>
+</document>
